@@ -1,6 +1,6 @@
 import { Details } from "./Details.js";
 
-let loader = $(".loader");
+let loader = $(".loaderBody");
 let cardSection = $(".cardSection");
 let allComponent = $("#allComponent");
 

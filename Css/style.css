@@ -174,13 +174,21 @@ background-color: #3f4142;
 }
 .UP i:hover{color: #3A497B;}
 
+
+
 /* ////////////////////// Loading //////////////////////*/
-.loader {
+.loaderBody{
     position: fixed;
-    top: 50vh;
-    left: 50%;
-  width: 90px;
-  height: 90px;
+    z-index: 9999;
+    inset: 0;
+    background-color: #272b30e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    width: 100px;
+    height: 100px;
   border-radius: 50%;
   border-top: 4px solid #FFF;
   border-right: 4px solid transparent;
@@ -207,6 +215,3 @@ background-color: #3f4142;
     transform: rotate(360deg);
   }
 } 
-
-
-

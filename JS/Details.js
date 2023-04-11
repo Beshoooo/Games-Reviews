@@ -1,4 +1,4 @@
-let loader = $(".loader");
+let loader = $(".loaderBody");
 
 let gameDetails = $("#gameDetails");
 let allComponent = $("#allComponent");

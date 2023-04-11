@@ -18,7 +18,7 @@ class UI{
 }
 
 let ui = new UI();
-let loader = $(".loader");
+let loader = $(".loaderBody");
 let cardSection = $(".cardSection");
 let allComponent = $("#allComponent");
 let UP = $(".UP");
