@@ -162,7 +162,7 @@ background-color: #3f4142;
     font-size: 16px;
     margin-top: 25px;
 }
-#gameDetails a{font-family: 'Courgette', cursive;}
+#gameDetails a{font-family: 'Courgette', cursive;margin-bottom: 35px;}
 
 /* Go up */
 .UP i{
