@@ -1,0 +1,212 @@
+body{
+    background-color: #272B30;
+    /* height: 5000px; */
+}
+.cardSection{display: none;}
+#allComponent{opacity: 0.2;}
+
+/*scroll bar*/
+::-webkit-scrollbar {
+    width: 1rem;
+}
+::-webkit-scrollbar-track {
+background-color: #3f4142;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 0.5) inset;
+}
+
+
+/*Header Img*/
+.headerImg{
+    background-color: #272B30;
+    max-height: 30vh;
+    object-fit: cover;
+}
+
+/*Navbar */
+.navbar{
+    position: sticky ;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #3A497B;
+    margin: auto;
+    margin-top: -30px;
+    box-shadow: 0px 0px 20px 0px #000;
+}
+.logoImg{
+    max-width: 50px;
+    margin-right: 5px;
+}
+.navbar h4 {
+    color: #fff;
+    font-family: 'Alkatra', cursive;
+    margin-top: 10px;
+}
+.navbar a {
+    color: #fff;font-size: 17px;
+    font-family: 'Courgette', cursive;
+    letter-spacing: 3px;
+}
+.navbar a:hover {transition: all 0.5s;}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover,
+.navbar-nav .show>.nav-link {
+    color: #0D86B8;
+}
+
+/*card */
+.card{
+    background-color: transparent;
+    color: #fff;
+    padding: 15px;
+    filter: grayscale(1);
+    transition: transform 0.5s,filter 0.5s;
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(1.03);
+    filter: grayscale(0);    
+    background-color: transparent;
+}
+
+.card .cardBody{margin-top: 15px;}
+.card h5{
+    font-family: 'Chivo', sans-serif;
+    display: inline-block;
+    overflow: hidden;
+    width: 75%; 
+    height: 50px;
+    font-weight: bold
+}
+.card p{
+    font-family: 'Alkatra', cursive;
+    text-align: center;
+    color: #696C6F;
+    font-weight: bold;
+    font-size: 15px;
+    width: 100%;
+    height: 80px;
+}
+.card .cardBody >span {
+    float: right;
+    font-family: 'Alkatra', cursive;
+}
+.card hr {color: #000;}
+.card footer :last-child {float:right;}
+.card footer .footerSpan
+{
+    font-family: 'Alkatra', cursive;
+    background-color: #32383E;
+    color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    height: 24px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    padding: 0 8px;
+}
+
+/*Details*/
+#gameDetails{
+    color: #fff;
+}
+#gameDetails h1{
+    font-family: 'Courgette', cursive;
+    display: inline-block;
+    margin-top: 20px;
+}
+#gameDetails img{
+    margin-top: 30px;
+    width: 100%;
+    box-shadow: 0px 8px 24px 5px #63aba4;
+    border: 3px solid #63aba4;
+    border-radius: 35px;
+}
+#gameDetails i{
+    margin-top: 30px;
+    cursor: pointer;
+}
+#gameDetails i:hover{
+    color: rgb(118 121 124);
+}
+#gameDetails h4{
+    font-family: 'Alkatra', cursive;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+#gameDetails span{
+    font-family: 'Chivo', sans-serif;
+    color: #000;
+    font-weight: bold;
+    background-color:#0DCAF0;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 4px;
+    min-width: 10px;
+    text-align: center;
+}
+#gameDetails p{
+    font-family: 'Alkatra', cursive;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    margin-top: 25px;
+}
+#gameDetails a{font-family: 'Courgette', cursive;}
+
+/* Go up */
+.UP i{
+    color: #aaa;  
+    position: fixed;
+    right: 80px;
+    bottom: 35px;
+    cursor: pointer;
+}
+.UP i:hover{color: #3A497B;}
+
+/* ////////////////////// Loading //////////////////////*/
+.loader {
+    position: fixed;
+    top: 50vh;
+    left: 50%;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border-top: 4px solid #FFF;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+    display: block;
+    margin: auto;
+  content: '';  
+  box-sizing: border-box;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border-left: 4px solid #FF3D00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+
+
