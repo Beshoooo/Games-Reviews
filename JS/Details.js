@@ -29,11 +29,11 @@ export class Details
 
         gameDetails.html("")
         gameDetails.append(`<div class="row">
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-md-6 col-9">
                                     <h1>Game Details</h1>
                                 </div>
-                                <div class="col-md-6 col-sm-6">
-                                    <i id="close" class="fa fa-times fa-2x float-end" aria-hidden="true"></i>
+                                <div class="col-md-6 col-3">
+                                    <i id="close" class="fa fa-times fa-2x float-end mt-3" aria-hidden="true"></i>
                                 </div>
                                 </div>
                                 <div class="details">
