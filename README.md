@@ -2,10 +2,14 @@
 
 ## Table of contents
 
+- [Description](#description)
 - [Built with](#built-with)
 - [Features](#features)
 - [Author](#author)
 
+
+### Description
+* This project gain all games with its categories and support users with the reviews about all games and rate to encourage users to try it.
 
 ### Built with
 * HTML5
